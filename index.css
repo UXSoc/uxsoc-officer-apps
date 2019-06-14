@@ -63,7 +63,7 @@ main {
   color: #828282;
   letter-spacing: 0.05em;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   line-height: 50px;
   max-width: 900px;
@@ -125,4 +125,18 @@ em {
 
 .pl-32 {
   padding-left: 32px;
+}
+
+@media screen and (max-width: 1050px) {
+.main__spiel { width: 75%; line-height: 40px; }
+.position { width: 70%; }
+}
+
+@media screen and (max-width: 840px) {
+.main__image { width: 75%; }
+}
+
+@media screen and (max-width: 450px) {
+.main__spiel { font-size: 17px; line-height: 35px; }
+.position__container, .position__text { line-height: 28px; }
 }
