@@ -1,0 +1,128 @@
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, Helvetica,
+    "Helvetica Neue", "Roboto", sans-serif;
+  background: #ffffff;
+  margin: 0px;
+  padding-bottom: 200px;
+}
+
+/* HEADER */
+.header {
+  background-color: #29a4fd;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  padding: 18px 32px;
+}
+
+.header__logo-container {
+  width: 40px;
+  margin-right: 12px;
+}
+
+.header__logo-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.header__item {
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: white;
+  font-weight: bold;
+}
+
+.header__apply-link {
+  margin-left: auto;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 7px 12px;
+}
+
+/* END HEADER */
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 107px;
+}
+
+.main__image {
+  margin: 0 auto;
+}
+
+.main__spiel {
+  color: #828282;
+  letter-spacing: 0.05em;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 50px;
+  max-width: 900px;
+  margin-top: 55px;
+}
+
+.main__spiel--blue {
+  color: #29a4fd;
+}
+
+.position {
+  margin-top: 130px;
+  max-width: 760px;
+  color: #747474;
+  margin-top: 90px;
+}
+
+.position__header {
+  font-weight: 600;
+  font-size: 30px;
+  color: #4f4f4f;
+}
+
+.position__text {
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #747474;
+  margin-top: 16px;
+}
+
+.position__sub-header {
+  color: #2ba2f8;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  margin-top: 24px;
+}
+
+.position__container {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+li {
+  letter-spacing: 0.05em;
+}
+
+/* utility */
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+.pl-32 {
+  padding-left: 32px;
+}
