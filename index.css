@@ -62,7 +62,7 @@ main {
 .main__spiel {
   color: #828282;
   letter-spacing: 0.05em;
-  text-align: center;
+  text-align: left;
   font-weight: 500;
   font-size: 20px;
   line-height: 50px;
