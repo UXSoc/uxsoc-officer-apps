@@ -1,3 +1,5 @@
+* { outline: red; }
+
 body {
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, Helvetica,
     "Helvetica Neue", "Roboto", sans-serif;
