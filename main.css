@@ -1,5 +1,5 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Helvetica, 'Helvetica Neue', 'Roboto',  sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, 'Helvetica Neue', 'Roboto', sans-serif;
     background: #698dff;
     margin: 0px;
 }
@@ -65,6 +65,7 @@ h2 {
     top: -20px;
     border-radius: 2px;
 }
+
 .position-item {
     max-width: 620px;
 }
