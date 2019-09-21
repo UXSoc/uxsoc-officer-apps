@@ -1,20 +1,37 @@
 * { outline: red; }
 
 body {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, Helvetica,
+  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, Helvetica,
     "Helvetica Neue", "Roboto", sans-serif;
-  background: #ffffff;
+  background: #fbfbfb;
   margin: 0px;
-  padding-bottom: 200px;
+  color: #828282;
+}
+
+/* font */
+@font-face {
+  font-family: Proxima Nova;
+  src: url('./font/ProximaNova-Regular.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Proxima Nova;
+  src: url('./font/Proxima-Nova-Thin.otf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: Proxima Nova;
+  src: url('./font/Proxima-Nova-Semibold.otf');
+  font-weight: bold;
 }
 
 /* HEADER */
 .header {
-  background-color: #29a4fd;
+  background-color: #8400c7;
   display: flex;
   align-items: center;
-  border-radius: 3px;
   padding: 18px 32px;
+  border-radius: 0px 0px 3px 3px;
 }
 
 .header__logo-container {
@@ -31,6 +48,7 @@ body {
   font-size: 18px;
   letter-spacing: 0.05em;
   color: white;
+font-family: Proxima Nova;
   font-weight: bold;
 }
 
@@ -40,13 +58,14 @@ body {
   color: white;
   text-decoration: none;
   font-size: 16px;
+font-family: Proxima Nova;
   letter-spacing: 0.05em;
   border: 2px solid white;
   border-radius: 4px;
   padding: 7px 12px;
 }
 
-/* END HEADER */
+.footer { background: #4F4F4F; color: white; padding: 17px; font: 14px Proxima Nova; letter-spacing: 5%; padding-left: 10%; }
 
 /* MAIN */
 
@@ -55,26 +74,84 @@ main {
   flex-direction: column;
   align-items: center;
   padding-top: 107px;
-}
-
-.main__image {
-  margin: 0 auto;
+  padding-bottom: 107px;
 }
 
 .main__spiel {
   color: #828282;
-  letter-spacing: 0.05em;
-  text-align: left;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 50px;
-  max-width: 900px;
-  margin-top: 55px;
+font-family: proxima nova; font-size: 18px; line-height: 40px; text-align: center; width: 70%;
+letter-spacing: 0.05em;
 }
 
-.main__spiel--blue {
-  color: #29a4fd;
+.main__spiel--purple {
+  color: #8400c7;
 }
+
+main h1 { font-family: Proxima Nova;
+font-size: 15px;
+line-height: 50px;margin: 0px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #8400c7; font-weight: bold; }
+
+/* Style the tab */
+.dept-tabs-flow {
+margin-top: 20px; margin-bottom: 20px; }
+.dept-tabs {
+  overflow: hidden;
+width: 80vw;
+text-align: center; }
+
+/* Style the buttons that are used to open the tab content */
+.dept-tabs button {
+    font-family: Proxima Nova;
+font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+letter-spacing: 0.05em;
+  text-align: center;
+  border: 1px solid #8400c7;
+  color: #8400c7;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+margin-right: 10px;
+cursor: pointer;
+width: auto;
+transition: 0.3s all ease-in-out;
+background: transparent;
+}
+
+/* Change background color of buttons on hover */
+.dept-tabs button:hover {
+  cursor: pointer;
+  background-color: #8400c7;
+  color: white;
+  font-weight: bold;
+}
+
+/* Create an active/current tablink class */
+.dept-tabs button.active {
+  cursor: pointer;
+  background-color: #8400c7;
+  color: white;
+  font-weight: bold;
+}
+
+/* Style the tab content */
+.dept-panel {
+  display: none;
+width: 80%;
+  animation: fadeEffect 0.5s;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 
 .position {
   margin-top: 130px;
@@ -115,6 +192,108 @@ li {
   letter-spacing: 0.05em;
 }
 
+/* department */
+.department-container {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #747474;
+  background: #FBFBFB;
+  margin: 50px auto 30px auto;
+}
+
+
+.bold-text {
+  font-weight: bold
+}
+
+.department-main-header {
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+  color: #4F4F4F;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.department-secondary-container {
+  display: inline-block;
+  margin-bottom: 10px;
+margin-top: 25px;
+}
+
+.department-secondary-header {
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #4F4F4F;
+  border-bottom: 3px solid #F2A81F;
+margin-top: 10px;
+font-weight: bold;
+}
+
+.department-information-header {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #9B51E0;
+font-weight: bold;
+margin-top: 20px;
+}
+
+.department-info-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.department-info-container .department-information-header { margin: 0px; }
+.department-info-card {
+margin: 0 auto 0 0;
+  display: inline-block;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 25px;
+  padding: 40px 45px;
+font-size: 14px; color: #747474; line-height: 30px; letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 768px) {
+  .department-info-card {
+    width: 98%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .department-info-card {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  main h1 { text-align: left; width: 80%; margin-top: 30px; }
+  .main__spiel { text-align: left; width: 80%;}
+  main { padding-top: 25px; padding-bottom: 25px; }
+  .dept-tabs-flow { position: fixed; bottom: 0px; z-index: 10000;
+width: 100%; height: 60px; overflow-y: hidden; overflow-x: auto; margin: 0px;
+
+background: #FFFFFF;
+box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+padding: 0px 10px;
+}
+.dept-tabs { width: 1100px; text-align: left; }
+}
+
+@media screen and (max-width: 420px) {
+  main { padding-top: 0px; padding-bottom: 20px; }
+  main h1 { width: 85%; }
+  .dep-tabs { width: 85%; }
+  .main__spiel { width: 85%; }
+  .department-info-card { padding: 20px; }
+
+}
+
 /* utility */
 
 strong {
@@ -127,18 +306,4 @@ em {
 
 .pl-32 {
   padding-left: 32px;
-}
-
-@media screen and (max-width: 1050px) {
-.main__spiel { width: 75%; line-height: 40px; }
-.position { width: 70%; }
-}
-
-@media screen and (max-width: 840px) {
-.main__image { width: 75%; }
-}
-
-@media screen and (max-width: 450px) {
-.main__spiel { font-size: 17px; line-height: 35px; }
-.position__container, .position__text { line-height: 28px; }
 }
