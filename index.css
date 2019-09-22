@@ -285,7 +285,7 @@ padding: 0px 10px;
 .dept-tabs { width: 1100px; text-align: left; }
 } */
 @media screen and (max-width: 515px) {
-.header { position: fixed; top: 0px; left: 0px; width: 100%; }
+.header { position: fixed; top: 0px; left: 0px; width: 100%; z-index: 10000; }
 
   main h1 { text-align: left; width: 80%; margin-top: 30px; }
   .main__spiel { text-align: left; width: 80%;}
@@ -301,7 +301,7 @@ padding: 0px 10px;
 }
 
 @media screen and (max-width: 420px) {
-  main { padding-top: 0px; padding-bottom: 20px; }
+  main { padding-top: 130px; padding-bottom: 20px; }
   main h1 { width: 85%; }
   .dep-tabs { width: 85%; }
   .main__spiel { width: 85%; }
