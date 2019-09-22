@@ -271,11 +271,26 @@ font-size: 14px; color: #747474; line-height: 30px; letter-spacing: 0.05em;
   }
 }
 
-@media screen and (max-width: 515px) {
+/* @media screen and (max-width: 515px) {
   main h1 { text-align: left; width: 80%; margin-top: 30px; }
   .main__spiel { text-align: left; width: 80%;}
   main { padding-top: 25px; padding-bottom: 25px; }
   .dept-tabs-flow { position: fixed; bottom: 0px; z-index: 10000;
+width: 100%; height: 60px; overflow-y: hidden; overflow-x: auto; margin: 0px;
+
+background: #FFFFFF;
+box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+padding: 0px 10px;
+}
+.dept-tabs { width: 1100px; text-align: left; }
+} */
+@media screen and (max-width: 515px) {
+.header { position: fixed; top: 0px; left: 0px; width: 100%; }
+
+  main h1 { text-align: left; width: 80%; margin-top: 30px; }
+  .main__spiel { text-align: left; width: 80%;}
+  main { padding-top: 150px; padding-bottom: 25px; }
+  .dept-tabs-flow { position: fixed; top: 80px; z-index: 10000;
 width: 100%; height: 60px; overflow-y: hidden; overflow-x: auto; margin: 0px;
 
 background: #FFFFFF;
