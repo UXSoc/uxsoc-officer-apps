@@ -301,7 +301,7 @@ padding: 0px 10px;
 }
 
 @media screen and (max-width: 420px) {
-  main { padding-top: 0px; padding-bottom: 20px; }
+  main { padding-bottom: 20px; }
   main h1 { width: 85%; }
   .dep-tabs { width: 85%; }
   .main__spiel { width: 85%; }
